@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+
+.wholePage{
+  background-color: skyblue;
+}
+
+.hiddenButton{
+  visibility: hidden;
+}
+
+.eachMsgContainer{
+  height: auto;
+  margin: 0;
+}
+
+.pageSection{
+  height: auto;
+  padding: 3px;
+  margin: 0;
+}
+
+.visibleButton{
+  background-color: DarkSeaGreen;
+  border: solid 2px;
+  border-radius: 6px;
+  color: purple;
+  display: inline-block;
+  font-size: 30px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20%;
+  margin-top: 5px;
+  padding-top: 0px;
+  text-align: center;
+  transform: translateY(4px);
+  width: 638px;
+}
+
+.eachMsg{
+  background: lightgrey;
+  border: solid black 1px;
+  display: inline-block;
+  font-size: 15px;
+  height: auto;
+  margin: 0px;
+  overflow: auto;
+  padding-left: 2px;
+  width: 638px;
+}
+
+.msgDate{
+  display: inline-block;
+  font-size: 13px;
+  height: auto;
+  margin: 0;
+  margin-left: 10.4em;
+  margin-top: 5px;
+  vertical-align: top;
+  width: 6em;
+}
+
+.listChat {
+  background-color: lightgrey;
+  border: 8px solid black;
+  border-radius: 10px;
+  height: 300px;
+  list-style: none;
+  margin-left: 320px;
+  overflow: scroll;
+  overflow-x: inherit;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.createChat {
+  background-color: DarkSeaGreen;
+  border: solid 2px;
+  border-radius: 6px;
+  color: purple;
+  display: inline-block;
+  font-size: 30px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20%;
+  margin-top: 5px;
+  text-align: center;
+  transform: translateY(4px);
+  width: 638px;
+}
+
+.textChat {
+  border: solid 2px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 20%;
+  margin-bottom: 10px
+  transform: translateY(4px);
+  width: 638px;
+}
+
+.chatTitle {
+  background-color: DarkSeaGreen;
+  border: solid 2px;
+  color: purple;
+  font-size: 50px;
+  font-weight: bolder;
+  opacity: 0.8;
+  margin-left: 20%;
+  margin-bottom: 0px;
+  margin-top: 2em;
+  padding: 4px;
+  text-align: center;
+  width: 638px;
+}
