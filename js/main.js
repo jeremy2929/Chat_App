@@ -42,18 +42,31 @@ export default React.createClass({
     e.preventDefault()
     var textInputValue = this.refs.textInput.value
     if (textInputValue != ""){
-      ajax({
-        url: "https://tiny-tiny.herokuapp.com/collections/jeremy2929-new",
-        dataType: "json",
-        type: "POST",
-        data:
+      // Blocking actual writing data to server for deployment demo purposes
+      // ajax({
+      //   url: "https://tiny-tiny.herokuapp.com/collections/jeremy2929-new",
+      //   dataType: "json",
+      //   type: "POST",
+      //   data:
+      //       {
+      //         text: textInputValue,
+      //         date: currentDate,
+      //       },
+      //   success: this.onPostAjaxLoadSuccess,
+      //   error: this.AjaxLoadError
+      // })
+      // End of server block
+      //
+      // This code below is to build the arrays to render instead of writing to server above
+      var newData=
             {
-              text: textInputValue,
               date: currentDate,
-            },
-        success: this.onPostAjaxLoadSuccess,
-        error: this.AjaxLoadError
-      })
+              text: textInputValue
+            }
+      this.state.textMsgs = this.state.textMsgs.concat(newData)
+      this.state.data = this.state.data.concat(newData)
+      // End of code to build arrays to render in substitute of writing to server
+      //
       var showing = this.refs.Show15.className
       if (showing === "hiddenButton"){
         if (this.state.data.length > 15){
